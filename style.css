@@ -10,7 +10,227 @@
      background-color: black;
  }
 
- .main {
+
+
+ @media(min-widdth:900px){.main {
+    background-image: url("assets/images/background.jpg");
+    height: 70vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 768px);
+    position: relative;
+    background-size: cover;
+
+}
+
+
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.75;
+    background-color: black;
+    position: absolute;
+    top: 0;
+
+}
+
+nav {
+    height: 62px;
+    display: flex;
+    max-width: 60vw;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+    position: relative;
+}
+
+nav img {
+    margin-top: 50px;
+    width: 160px;
+    position: relative;
+    z-index: 1;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    margin-top: 10vw;
+    padding: 0 30px;
+    height: calc(100%-62px);
+    font-family: inherit;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    gap: 24px;
+}
+
+.hero> :nth-child(1) {
+    font-size: 48px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+
+hr {
+    height: 11px;
+    border: 0px;
+    background-color: rgb(46, 44, 44);
+}
+
+.btn {
+    background-color: rgb(229, 9, 20);
+    z-index: 1;
+    font-family: inherit;
+
+    font-weight: 600;
+    min-height: 3.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.5rem;
+    border-radius: 0.25rem;
+    width: auto;
+    cursor: pointer;
+    fill: currentColor;
+
+    color: white;
+    border: 0px;
+
+}
+button:hover{background-color: rgb(99, 1, 1);}
+select {
+    z-index: 1;
+    position: relative;
+    background: transparent;
+    color: white;
+    font-family: inherit;
+    font-weight: 600;
+    width: 90px;
+    margin-top: 50px;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 0.25rem;
+    margin-right: 23px;
+
+
+    padding-right: 0.75rem;
+    padding-left: 0.25rem;
+    padding-bottom: 0.27rem;
+    padding-top: 0.35rem;
+}
+
+#nav-btn {
+    position: relative;
+    padding: 0.35em 0.45em 0.27em;
+    min-height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+
+}
+
+.mid-nav {
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+}
+
+ input {
+    padding: 1.2rem 6rem 0.9rem 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 0.25rem;
+    background-color: rgba(23, 23, 23, 0.7);
+    color: white;
+    border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+.first{color: white;
+font-family: inherit;
+justify-content: center;
+position: relative;
+align-items: center;
+display: flex;
+margin: auto;
+max-width: 75vw;
+font-size: 20px;
+font-weight: 550;}
+
+.secImage{position: relative;}
+.secImage img{width: 38vw;
+position: relative;
+z-index: 10;}
+.secImage video{
+position: absolute;
+  top: 55px;
+  right: 0;
+   }
+
+.rajmachawal video{ 
+   position: absolute;
+   width: 350px;
+   margin-right: 95px;
+   
+}    
+
+
+.faq{color: white;
+padding: 35px;
+font-family: inherit;
+font-size: 30px;
+}
+
+.faqsection{justify-content: space-between;
+display: flex;
+cursor: pointer;
+max-width: 70vw;
+padding: 25px;
+margin: 10px auto;
+background-color: rgb(45, 45, 45);}
+
+.faqsection:hover{background-color: rgb(60, 60, 60);}
+
+
+footer{color: rgba(255, 255, 255, 0.7);
+   max-width: 80vw;
+   margin: 50px auto;}
+.footer li{
+   list-style: none;
+   color: rgba(255, 255, 255, 0.7);
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+
+}
+.footer a{color:  rgba(255, 255, 255, 0.7);
+cursor: pointer;}
+
+.footer a:hover{color: red;
+text-decoration: none;}
+.footer{display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+
+color:  rgba(255, 255, 255, 0.7);
+}
+
+footer-items{display: flex;
+flex-direction: column;}
+}
+ /* .main {
      background-image: url("assets/images/background.jpg");
      height: 70vh;
      background-position: center center;
@@ -21,14 +241,7 @@
 
  }
 
- @media only screen and (max-width: 768px) {
 
-     /* For mobile phones: */
-     .main .box {
-         width: 100%;
-         min-height: max-content;
-     }
- }
 
  .main .box {
      height: 70vh;
@@ -233,4 +446,4 @@ color:  rgba(255, 255, 255, 0.7);
 }
 
 footer-items{display: flex;
-flex-direction: column;}
+flex-direction: column;} */
