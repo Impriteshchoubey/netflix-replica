@@ -10,9 +10,6 @@
      background-color: black;
  }
 
-
-
- 
  .main {
      background-image: url("assets/images/background.jpg");
      height: 70vh;
@@ -24,7 +21,14 @@
 
  }
 
+ @media only screen and (max-width: 768px) {
 
+     /* For mobile phones: */
+     .main .box {
+         width: 100%;
+         min-height: max-content;
+     }
+ }
 
  .main .box {
      height: 70vh;
